@@ -20,7 +20,7 @@ public class MapGenerator : MonoBehaviour
             for (int j = 0; j < y; j++)
             {
                 GameObject obj = Instantiate(origin);
-                obj.transform.position = new Vector3(i,0, j);
+               obj.transform.position = new Vector3(i,0, j);
                 var comp = obj.GetComponent<Tile>();
                 comp.Init(i, j);
                 tiles[i, j] = comp;
